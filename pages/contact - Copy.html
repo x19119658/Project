@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="stylesheet" href="../styles/components/nav.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- code to use icons shown by W3 -->
+        <script src="https://kit.fontawesome.com/17ef7a0e0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-primary z-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" height="90px" width="250px"
+                        alt="logo of the company"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-top">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recipes.html" target="_blank">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./substitutes.html" target="_blank">Substitutes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html" target="_blank">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Social Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.instagram.com/eire_vegan/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                                <li><a class="dropdown-item" href="https://www.x.com/vegan_eire" target="_blank" rel="noopener noreferrer">X</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Top Banner -->
+        <div id="container-2">
+            <img class="veg" src="../images/main/callcenter.png" alt="">
+        </div>
+
+        <!-- Main Content -->
+         <section class="contact-form">
+            <!-- form element used to create forms & linking it to our choice of external API (Web3Forms)-->
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <h3>Get in touch with us here</h3>
+                <!-- indidate a clear distinction between contact form heading and the actual form -->
+                <hr>
+                <!-- personalised access key from Web3Forms to allow submissions to be forwarded to an email -->
+                <input type="hidden" name="access_key" value="714271b8-fe55-4d7f-8fa9-df3f5ba2cc9c">
+
+                <input type="text" id="fname" name="First Name" placeholder="First Name" required>
+                
+                <input type="text" id="lname" name="Last Name" placeholder="Last Name" required>
+
+                <input type="text" id="email" name="Email" placeholder="E-mail Address" required>
+
+                <textarea id="message" name="message" placeholder="Your Message" style="height:100px" required></textarea>
+                <button type="submit">Submit <img src="../images/contact/arrow.png"></button>
+
+                <!-- <input type="submit" value="Submit"> -->
+            </form>
+        </section>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="copyright">
+                <h4> &copy; Vegan Éire </br> All rights reserved</h4>
+            </div>
+            <div class="footer-nav">
+                <ul class="navbar-nav" id="nav-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recipes.html" target="_blank">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./substitutes.html" target="_blank">Substitutes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html" target="_blank">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/eire_vegan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.x.com/vegan_eire" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
